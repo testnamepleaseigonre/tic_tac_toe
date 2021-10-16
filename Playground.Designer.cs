@@ -35,9 +35,13 @@ namespace tic_tac_toe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(223, 199);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(184, 161);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Playground";
-            this.Text = "TIC TAC";
+            this.ShowIcon = false;
+            this.Text = "TIC TAC TOE";
             this.Load += new System.EventHandler(this.Playground_Load);
             this.ResumeLayout(false);
 
