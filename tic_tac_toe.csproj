@@ -47,24 +47,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Elements.cs" />
-    <Compile Include="MainMenu.cs">
+    <Compile Include="Forms\MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainMenu.Designer.cs">
+    <Compile Include="Forms\MainMenu.Designer.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Playground.cs">
+    <Compile Include="Forms\Playground.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Playground.Designer.cs">
+    <Compile Include="Forms\Playground.Designer.cs">
       <DependentUpon>Playground.cs</DependentUpon>
     </Compile>
+    <Compile Include="Logic.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="MainMenu.resx">
+    <EmbeddedResource Include="Forms\MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Playground.resx">
+    <EmbeddedResource Include="Forms\Playground.resx">
       <DependentUpon>Playground.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
