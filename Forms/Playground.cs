@@ -14,8 +14,6 @@ namespace tic_tac_toe
         private readonly Logic logic = new Logic();
         private bool turn; //true = X; false = Y
         private List<Button> board_buttons_list; //list of playable buttons on board
-        
-        
 
         public Playground(int boardSize, bool turn)
         {
