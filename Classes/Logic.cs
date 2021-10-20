@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
-using System.Linq;
 using System.Collections.Generic;
-using System.Drawing;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace tic_tac_toe
 {
@@ -14,6 +10,7 @@ namespace tic_tac_toe
         {
 
         }
+
         public string checkHorizontal(List<Button> board_buttons_list, int board_size, int matches_to_win)
         {
             foreach (Button ongoing in board_buttons_list)
@@ -29,7 +26,7 @@ namespace tic_tac_toe
             return null;
         }
 
-        private bool checkForWinHorizontal(Button checking, List<Button> board_buttons_list, int matches_to_win)
+        public bool checkForWinHorizontal(Button checking, List<Button> board_buttons_list, int matches_to_win)
         {
             int matches = 1;
             for (int i = 1; i < matches_to_win; i++)
