@@ -89,12 +89,12 @@ namespace tic_tac_toe.Tests
             List<Button> buttonsList = new List<Button>();
             Random random = new Random();
             int row = random.Next(1, board_size + 1);
-            int rowColumn = random.Next(1, board_size - 1);
+            int col = random.Next(1, board_size - 1);
             for (int x = 0; x < board_size; x++)
             {
                 for (int y = 0; y < board_size; y++)
                 {
-                    if(x + 1 == row && y + 1 >= rowColumn && y + 1 <= rowColumn + 2)
+                    if(x + 1 == row && y + 1 >= col && y + 1 <= col + 2)
                         buttonsList.Add(GenerateButton(x, y, expected, false));
                     buttonsList.Add(GenerateButton(x, y, "any", true));
                 }
